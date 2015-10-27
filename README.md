@@ -52,13 +52,13 @@ III. Organization of the scripts:
   - In charge of a specific scenario that requires multiple logins or multi-user interaction
 - User scripts:
   - Found under `./test/user`
-  - They call methods in route scripts imported from `./test/route`
+  - They call methods in route scripts imported from `./test/route/*/`
   - In charge of a sequence of interactions made by one user in one login/logout session 
 - Route scripts:
-  - Found under `./test/route` and `./test/route/*/`
+  - Found under `./test/route/*/`
   - They specify what actions can be performed and tested in a specific page(or under a specific URL route)
 - Test data:
-  - Found under `./test/data` and `./test/data/*/`
+  - Found under `./test/data/*/`
   - Provides user data, lesson data, etc as params for some of the scenario, user and route scripts. 
 - env.js:
   - Found under `./test/env.js`
