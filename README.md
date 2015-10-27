@@ -1,5 +1,5 @@
 # protractor-LT
-E2E testing for LearnTogether
+E2E testing for LearnTogether, for protractor tutorials click [here](https://angular.github.io/protractor/#/)
 
 1.To setup protractor, open terminal/command and type the following:
 ```
