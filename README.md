@@ -22,7 +22,7 @@ I.Open terminal/command and type the following in the learntogether folder:
 
 II.Change directory to the protractor-LT home folder then type the following in the terminal/command:
 ```
-  protractor ./quickTest/explode.js
+  protractor ./quickTestConf/explode.js
 ```
 >This would run, and a firefox browser would popup and execute a series of action by itself.
 >Please note that you need to run `webdriver-manager start` in the background for things to work, it is the selenium webdrivers that doing the user-interactions for you.
@@ -38,7 +38,7 @@ III. Organization of the scripts:
 - The test scripts for LT is organized in a reusable fashion
   - In brief: conf.js -> Scenario -> User -> Route
   - For the actual test: `protractor conf.js` ---checks---> `conf.js` ---runs---> Scenario scripts ---import&call---> User scripts ---import&call---> Route scripts
-  - For the quick-testing of features, i.e testing the explode function, as well as "testing the test scripts": `protractor ./quicktest/explode.js` ---checks---> `./quicktest/explode.js` ---runs---> `./test/route/quickTest/quickTestExplode.js` ---import&call---> `./test/route/exploder/exploderXML.js`
+  - For the quick-testing of features, i.e testing the explode function, as well as "testing the test scripts": `protractor ./quickTestConf/explode.js` ---checks---> `./quickTestConf/explode.js` ---runs---> `./test/route/quickTest/quickTestExplode.js` ---import&call---> `./test/route/exploder/exploderXML.js`
 
   
 - Protractor conf file:
