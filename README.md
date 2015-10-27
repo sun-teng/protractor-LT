@@ -20,7 +20,7 @@ I.Open terminal/command and type the following in the learntogether folder:
 ```
 >This should set learntogether to pre-explode status.
 
-II.Change directory to the protractor-LT home folder then type the following in the terminal/commmand:
+II.Change directory to the protractor-LT home folder then type the following in the terminal/command:
 ```
   protractor ./quickTest/explode.js
 ```
