@@ -85,8 +85,13 @@ webdriver-manager start
 
 - Sit back, relax, and sip some wine. While you see the browser comes to life by itself.
 
+V. Contributing
+- Same procedure as LT
+- Please squash and create PR from master branch
 
-
+VI. Coming soon
+- lesson test object
+- batch/bash script for creating and running the quick test files
 
 
  
