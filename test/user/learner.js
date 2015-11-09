@@ -3,6 +3,7 @@ var canvasDirective = require('../route/canvas/canvas.js');
 
 var chooseMentorDirective = require('../route/lessons/chooseMentor.js');
 var mcqDirective = require('../route/lessons/mcq.js');
+var fillInDirective = require('../route/lessons/fillIn.js');
 var sideNav = require('../route/lessons/sideNav.js');
 
 var globalNav = require('../route/navbar/navbar.js');
@@ -41,7 +42,20 @@ module.exports = function(user){
 		globalNav.logout();
 	};
 	
+	learner.doOneFillIn = function(lesson){
+		loginDirective.loginAs(learner);
+		canvasDirective.goIntoLesson(lesson);
+		sideNav.goToStep('Step 3');
+		//sideNav.goToSubstep('6.1');	
+		fillInDirective.doFillIn('typing',0,'right answer',true);
+		sideNav.goToStep('Step 3');
+		fillInDirective.doFillIn('dropdown',1,'right answer',true);
+	
+		globalNav.logout();
+	
+	}
 	return learner;
+
 
 }
 
