@@ -38,7 +38,7 @@ III. Organization of the scripts:
 - The test scripts for LT is organized in a reusable fashion
   - In brief: conf.js -> Scenario -> User -> Route
   - For the actual test: `protractor conf.js` ---checks---> `conf.js` ---runs---> Scenario scripts ---import&call---> User scripts ---import&call---> Route scripts
-  - For the quick-testing of features, i.e testing the explode function, as well as "testing the test scripts": `protractor ./quickTestConf/explode.js` ---checks---> `./quickTestConf/explode.js` ---runs---> `./test/route/quickTest/quickTestExplode.js` ---import&call---> `./test/route/exploder/exploderXML.js`
+  - For "testing the test scripts": `protractor ./quickTestConf/explode.js` ---checks---> `./quickTestConf/explode.js` ---runs---> `./test/route/quickTest/quickTestExplode.js` ---import&call---> `./test/route/exploder/exploderXML.js`
 
   
 - Protractor conf file:
