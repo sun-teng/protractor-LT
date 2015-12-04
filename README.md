@@ -91,7 +91,8 @@ V. Contributing
 
 VI. Coming soon
 - lesson test object
-- batch/bash script for creating and running the quick test files ( Windows version done....)
+- batch/bash script for creating and running the quick test files ( Windows version done.)
+
 
 
  
